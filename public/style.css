@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden; /* Prevent body from overflowing */
+}
+
+/* Container for the content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure it fills the screen */
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Left side: Form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    margin-bottom: 20px; /* Space below the form */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger size for the main title */
+    color: #333;  /* Dark color for contrast */
+    padding: 20px;
+    background-color: #f8f8f8;  /* Light background for emphasis */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    text-transform: capitalize; /* Capitalize first letter of the URL */
+}
+
+h2 {
+    font-size: 1.8rem;  /* Slightly smaller font size for subheading */
+    color: #555;  /* Lighter color for the subheading */
+    padding: 10px;
+    background-color: #eef1f5;  /* Light blue-gray background for contrast */
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* Form elements styling */
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#analyze {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width for the button */
+    margin-top: 20px; /* Some space from the input fields */
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for the button */
+.button-container {
+    position: absolute; /* Fixed to the top */
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Ensure it stays on top */
+}
+
+/* Style for the analyze button */
+.button-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Right side: Table */
+.table-container {
+    width: 100%;
+    max-width: 700px; /* Limit the table width */
+    margin-left: 20px; /* Spacing from the form */
+    overflow-x: auto; /* Make table scrollable horizontally on small screens */
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: 500px; /* Set a fixed height for the table container */
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem; /* Smaller text for better fitting */
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
